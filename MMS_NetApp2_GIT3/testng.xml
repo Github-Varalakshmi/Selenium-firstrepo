@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+  <!--   
+     <class name="com.paragon.netapp.tests.CompleteCheck">
+      		<methods>
+      			<include name=""/>
+      		</methods>  
+      </class>
+       -->
+      
+     <class name="com.paragon.netapp.tests.loginTest">
+      	<methods>
+      		<include name="TestCase01"></include>
+      	</methods>
+      </class>
+      
+  
+      
+        <class name="com.paragon.netapp.tests.NativeTest">
+        <methods>
+        <include name="userTest"></include>
+      	<include name="editTest"></include>
+      	<include name="passwordTest"></include>
+      	<include name="deleteTest"></include>
+      	 </methods>
+      </class>
+      
+     
+     <class name="com.paragon.netapp.tests.InvalidTest">
+        <methods>
+      	<include name="InvalidScenario"></include>
+      	 </methods>
+      </class>
+      
+       
+        
+
+     <class name="com.paragon.netapp.tests.AdminTest">
+      	<methods>
+      	<include name="ApplicationAdmin"></include>
+      		<include name="PropertyAdmin"></include>
+      		<include name="ManualAdmin"></include>
+      		<include name="ReportAdmin"></include>
+     	 </methods>
+      </class> 
+      
+      
+     
+     <class name="com.paragon.netapp.tests.DiscoverTest">
+      	<methods>
+      	<include name="discoverModule"></include>
+      		<include name="Control"></include>
+      		<include name="DeleteWorkpack"></include>
+      		<include name="discoverManual"></include>
+      		
+     	 </methods>
+      </class> 
+      
+      
+      
+       <class name="com.paragon.netapp.tests.DiscoverReportTest">
+      	<methods>
+      	<include name="callMeTest"></include>
+      	<include name="uknownOwnerReport"></include>
+      	<include name="volumeDecommisionReport"></include>
+      	<include name="multiOwnerReport"></include>
+      	<include name="activityReport"></include>
+      	<include name="applicationDetailReport"></include>
+      		
+      		
+     	 </methods>
+      </class>  
+        
+               
+ </classes>
+  </test>
+</suite>
